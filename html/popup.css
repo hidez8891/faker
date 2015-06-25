@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  color: #345;
+  font-size: 9pt;
+}
+body * {
+  white-space: nowrap;
+}
+
+.templateItem {
+  display: none;
+}
+
+#menu .item {
+  padding: 4px 25px;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+#menu .item:hover {
+  padding: 3px 24px;
+  border: solid 1px #bcd;
+  border-radius: 3px;
+  background: linear-gradient(left top, left bottom, color-stop(0, #fff), color-stop(0.4, hsl(215, 67%, 97%)), color-stop(0.41, hsl(213, 48%, 95%)));
+}
+
+#menu .item:active {
+  padding: 3px 24px;
+  border: solid 1px #abc;
+  border-radius: 3px;
+  background: #dde7f2 none;
+  background: linear-gradient(left top, left bottom, color-stop(0, #e8eef4), color-stop(1, #f5f9f4));
+}
+
+#menu .icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+#menu .checked .icon {
+}
