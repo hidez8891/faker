@@ -1,6 +1,6 @@
 {
   "name": "faker | fake user agent",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "fake user agent",
   "icons": {
@@ -16,5 +16,6 @@
     "webRequestBlocking",
     "<all_urls>",
     "tabs"
-  ]
+  ],
+	"homepage_url": "https://github.com/hidez8891/faker"
 }
