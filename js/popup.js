@@ -13,6 +13,11 @@ function buildMenuItems() {
   var template = $("#menu .templateItem");
   var menu = $("#menu");
 
+	var checked_ua = "";
+  if (tabId in tabInfo) {
+		checked_ua = tabInfo[tabId].name;
+	}
+
   for (var i = 0; i < agents.length; ++i) {
     var agent = agents[i];
     console.log(agent);
@@ -24,7 +29,7 @@ function buildMenuItems() {
     $("span", item).text(agent.name);
 
     // tab id check
-    if (tabId in tabInfo) {
+    if (checked_ua == agent.name) {
       item.addClass("checked");
     }
 
